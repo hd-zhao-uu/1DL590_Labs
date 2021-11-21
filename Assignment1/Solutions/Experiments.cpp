@@ -13,37 +13,65 @@
 
 using namespace std;
 
+std::vector<std::pair<int, operation>> sharedSeq;
+
 template <class T>
-void worker_func(int thread_id, T* set, vector<operation> test_case) {
-    for (auto it = test_case.begin(); it != test_case.end(); ++it) {
+void worker_func(int thread_id, T* set, std::vector<operation> testCase) {
+    bool ret;
+    for (auto it = testCase.begin(); it != testCase.end(); ++it) {
         // Do the operation from the test case
         switch (it->method) {
             case add:
-                set->add(it->input);
+                ret = set->add(it->input);
                 break;
             case rmv:
-                set->rmv(it->input);
+                ret = set->rmv(it->input);
                 break;
             case ctn:
-                set->ctn(it->input);
+                ret = set->ctn(it->input);
                 break;
             default:
                 std::cout << "Worker " << thread_id
                           << " no matching method found" << std::endl;
         }
+        sharedSeq.push_back(
+            {thread_id, operation{it->method, it->input, ret}});
     }
 
     std::cout << "Worker " << thread_id << " completed" << endl;
 }
 
-void monitor_func(int N_Threads) {
+void monitor_func(int nThread) {
     // Pick the first operation from the sequence.
     // Check the element that you picked
     SetLib sl;
-    
+    for (auto oPair : sharedSeq) {
+        int threadId = oPair.first;
+        operation op = oPair.second;
+        bool ret;
+        std::string mName;
+        switch (op.method) {
+            case add:
+                ret = sl.add(op.input, op.output);
+                mName = "add";
+                break;
+            case rmv:
+                ret = sl.rmv(op.input, op.output);
+                mName = "rmv";
+                break;
+            case ctn:
+                ret = sl.ctn(op.input, op.output);
+                mName = "ctn";
+                break;
+        }
+        if (!ret) {
+            printf("\t[ERROR] Thread Id = %d, Opertion: (%s, %d, %s)\n", threadId,
+                   mName.c_str(), op.input, op.output ? "true" : "false");
+        }
+    }
+
     std::cout << "Monitor completed" << std::endl;
 }
-
 
 /*
     Start Tasks
@@ -52,10 +80,10 @@ void task1() {
     // test task 1
     std::cout << "------------- START TEST TASK 1 -------------" << std::endl;
     std::vector<operation> testOps;
-    loadOperationsFromFile("./testcases/testops.txt", testOps);
+    loadOperationsFromFile("./testcases/T1TEST.txt", testOps);
 
-    std::cout << testOps.size()
-              << " test Operations. Index starts from 1." << std::endl;
+    std::cout << testOps.size() << " test Operations. Index starts from 1."
+              << std::endl;
     testOperations(testOps);
     std::cout << "------------- TASK 1 ENDS -------------\n" << std::endl;
 }
@@ -65,8 +93,8 @@ void task2() {
     // init pairs
     std::vector<std::pair<methodname, int>> testPairs;
     std::vector<operation> testOps;
-    string testfile = "./testcases/testpairs.txt";
-    loadPairsFromFile("./testcases/testpairs.txt", testPairs);
+    string testfile = "./testcases/T2TEST.txt";
+    loadPairsFromFile(testfile, testPairs);
 
     // init operations;
     generateOperationsFromPairs(testPairs, testOps);
@@ -76,40 +104,64 @@ void task2() {
     std::cout << "------------- TASK 2 ENDS -------------\n" << std::endl;
 }
 
-void task3() {
-    int N_Threads = 3;
-    thread* worker = new thread[N_Threads];
+void _task3(int testCaseN, int nThread) {
+    std::thread* worker = new std::thread[nThread];
     SetList* set = new SetList();
-    // Run workers------------------
-    for (int i = 0; i < N_Threads; i++) {
-        // fill test_case with your sequence of operations
-        std::vector<operation> test_case;
-        std::vector<std::pair<methodname, int>> testPairs;
-        string testfile = "./testcases/testpairs.txt";
-        loadPairsFromFile("./testcases/testpairs.txt", testPairs);
-        generateOperationsFromPairs(testPairs, test_case);
+    std::vector<operation> testCase;
 
-        worker[i] = thread(worker_func<SetList>, i, std::ref(set), test_case);
+    std::vector<std::pair<methodname, int>> testPairs;
+    std:string testfile = "./testcases/T3TEST_" + to_string(testCaseN) + ".txt";
+    loadPairsFromFile(testfile, testPairs);
+    
+
+    for (auto pair : testPairs)
+        testCase.push_back(
+            {pair.first, pair.second, false});  // set false as default
+
+    
+    // Run workers------------------
+    for (int i = 0; i < nThread; i++) {
+        
+        worker[i] = thread(worker_func<SetList>, i, std::ref(set), testCase);
     }
 
-    for (int i = 0; i < N_Threads; i++) {
+    for (int i = 0; i < nThread; i++) {
         worker[i].join();
     }
     //------------------------------
     // Run monitor-------------------
-    thread monitor = thread(monitor_func, N_Threads);
+    std::thread monitor = std::thread(monitor_func, nThread);
     monitor.join();
     //------------------------------
     delete set;
 }
 
-void task4() {}
+void task3() {
+    std::cout << "------------- START TEST TASK 3 -------------" << std::endl;
+    std::vector<int> threads({2,4,8});
+
+    for(int nThread:threads) {
+        printf("== Num of threads = %d  ==\n", nThread);
+        for(int i = 0; i < 5; i++) {
+            printf("\n {Test Case %d Starts} \n", i+1);
+            _task3(i, nThread);
+            printf("{Test Case %d Ends} \n\n", i+1);
+        }
+       
+        
+    } 
+
+    std::cout << "------------- TASK 3 ENDS -------------\n" << std::endl;
+}
+
+void task4() {
+
+}
 
 int main() {
-    task1();
+    // task1();
     task2();
     // task3();
     // task4();
     return 0;
 }
-

@@ -55,7 +55,7 @@ void loadPairsFromFile(std::string testfile,
         }
         infile.close();
     }
-    std::cout << "load" << testPairs.size() << " test Pairs." << std::endl;
+    std::cout << "load " << testPairs.size() << " test Pairs." << std::endl;
 }
 
 void loadOperationsFromFile(std::string testfile, std::vector<operation>& ops) {
