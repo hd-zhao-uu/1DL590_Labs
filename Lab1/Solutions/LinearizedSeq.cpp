@@ -2,6 +2,8 @@
 #include <mutex>
 
 enum methodname {add, rmv, ctn};
+
+#pragma once
 typedef struct _operation{
   //blah blah blah
   methodname method;

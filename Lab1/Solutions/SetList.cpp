@@ -1,20 +1,12 @@
 #include <limits>
 #include <iostream>
-
-struct Node {
-	int value;
-	Node* next;
-
-    Node() {}
-    Node(int value): value(value) {}
-    
-};
+#include "Node.h"
 
 
 class SetList {
     private:
-        Node* head = new Node(std::numeric_limits<int>::min()); 
-        Node* tail = new Node(std::numeric_limits<int>::max());
+        Node<int> * head = new Node<int>(std::numeric_limits<int>::min()); 
+        Node<int>* tail = new Node<int>(std::numeric_limits<int>::max());
 
 
     public:
@@ -23,7 +15,7 @@ class SetList {
         }
 
         ~SetList() {
-            Node* node = NULL;
+            Node<int>* node = NULL;
 
             while(node != tail) {
                 node = head->next;
@@ -35,7 +27,7 @@ class SetList {
         }
 
         bool add(int value) {
-            Node* pre, *cur;
+            Node<int>* pre, *cur;
             pre = head;
             cur = head->next;
 
@@ -49,7 +41,7 @@ class SetList {
                 return false;
             else {
                 // the value is not in the set, add
-                Node* node = new Node(value);
+                Node<int>* node = new Node<int>(value);
                 node->next = cur;
                 pre->next = node;
                 return true;
@@ -57,7 +49,7 @@ class SetList {
         }
 
         bool rmv(int value) {
-            Node* pre, *cur;
+            Node<int>* pre, *cur;
             pre = head;
             cur = head->next;
 
@@ -76,7 +68,7 @@ class SetList {
         }
 
         bool ctn(int value) {
-            Node* pre, *cur;
+            Node<int>* pre, *cur;
             pre = head;
             cur = head->next;
 
@@ -93,7 +85,7 @@ class SetList {
         }
 
         void printSetList() {
-            Node *cur = head->next;
+            Node<int> *cur = head->next;
             std::cout << "[";
             while (cur != tail) {
                 if(cur != head->next)
