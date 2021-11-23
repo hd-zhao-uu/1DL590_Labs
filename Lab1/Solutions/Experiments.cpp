@@ -190,7 +190,7 @@ void task3() {
 // --------------------------------------------------------------------------------------
 void _task4(int testCaseN, int nThread) {
     std::thread* worker = new std::thread[nThread];
-    CoarseSet* set = new CoarseSet();
+    CoarseSet* set = new CoarseSet(sharedSeq);
     std::vector<operation> testCase;
 
     std::vector<std::pair<methodname, int>> testPairs;
