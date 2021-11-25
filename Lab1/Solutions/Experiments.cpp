@@ -106,58 +106,72 @@ void monitor_func(int nThread) {
 
 void testOperations(std::vector<operation>& ops) {
     SetLib sl;
-    std::vector<std::pair<int, operation>> errorOps;
+    // std::vector<std::pair<int, operation>> errorOps;
+    bool flag = false; // if there is an error op
     for(int i = 0; i < ops.size(); i++) {
         auto op = ops[i];
         bool ret;
         switch (op.method) {
             case add:
-                printf("[OPERATION%3d] add(%d, %s)\n", i + 1, op.input,
-                       op.output ? "true" : "false");
+                // printf("[OPERATION%3d] add(%d, %s)\n", i + 1, op.input,
+                //        op.output ? "true" : "false");
                 ret = sl.add(op.input, op.output);
                 break;
             case rmv:
-                printf("[OPERATION%3d] rmv(%d, %s)\n", i + 1, op.input,
-                       op.output ? "true" : "false");
+                // printf("[OPERATION%3d] rmv(%d, %s)\n", i + 1, op.input,
+                //        op.output ? "true" : "false");
                 ret = sl.rmv(op.input, op.output);
                 break;
             case ctn:
-                printf("[OPERATION%3d] ctn(%d, %s)\n", i + 1, op.input,
-                       op.output ? "true" : "false");
+                // printf("[OPERATION%3d] ctn(%d, %s)\n", i + 1, op.input,
+                //        op.output ? "true" : "false");
                 ret = sl.ctn(op.input, op.output);
                 break;
         }
-        if (!ret) {
-            errorOps.push_back({i + 1, op});
-            std::cout << "!!ERROR OPERATION" << std::endl;
-        }
+        // if (!ret) {
+        //     errorOps.push_back({i + 1, op});
+        //     std::cout << "!!ERROR OPERATION" << std::endl;
+        // }
 
-        std::cout << "CURRENT SET: " << std::endl;
-        sl.printSet();
-        std::cout << std::endl;
+        // std::cout << "CURRENT SET: " << std::endl;
+        // sl.printSet();
+        // std::cout << std::endl;
+
+        // stop and print if find an error op
+        if (!ret) {
+            // errorOps.push_back({i + 1, op});
+            std::cout << "!!THE FIRST ERROR OPERATION" << std::endl;
+            printf("[OPERATION%3d] add(%d, %s)\n", i+1, op.input, op.output ? "true" : "false");
+            flag = true;
+            break;
+        }
     }
 
-    // print error ops
-    std::cout << "ERROR OPERATIONS" << std::endl;
-    if (errorOps.size()) {
-        std::for_each(errorOps.begin(), errorOps.end(), [](auto p) {
-            switch (p.second.method) {
-                case add:
-                    printf("[OPERATION%3d] add(%d, %s)\n", p.first,
-                           p.second.input, p.second.output ? "true" : "false");
-                    break;
-                case rmv:
-                    printf("[OPERATION%3d] rmv(%d, %s)\n", p.first,
-                           p.second.input, p.second.output ? "true" : "false");
-                    break;
-                case ctn:
-                    printf("[OPERATION%3d] ctn(%d, %s)\n", p.first,
-                           p.second.input, p.second.output ? "true" : "false");
-                    break;
-            }
-        });
-    } else
+    if (!flag){
         std::cout << "\tNo Error Operation!" << std::endl;
+    }
+
+    // // print error ops
+    // std::cout << "ERROR OPERATIONS" << std::endl;
+    // if (errorOps.size()) {
+    //     std::for_each(errorOps.begin(), errorOps.end(), [](auto p) {
+    //         switch (p.second.method) {
+    //             case add:
+    //                 printf("[OPERATION%3d] add(%d, %s)\n", p.first,
+    //                        p.second.input, p.second.output ? "true" : "false");
+    //                 break;
+    //             case rmv:
+    //                 printf("[OPERATION%3d] rmv(%d, %s)\n", p.first,
+    //                        p.second.input, p.second.output ? "true" : "false");
+    //                 break;
+    //             case ctn:
+    //                 printf("[OPERATION%3d] ctn(%d, %s)\n", p.first,
+    //                        p.second.input, p.second.output ? "true" : "false");
+    //                 break;
+    //         }
+    //     });
+    // } else
+    //     std::cout << "\tNo Error Operation!" << std::endl;
 }
 
 
@@ -296,8 +310,8 @@ void task4() {
 
 int main() {
     task1();
-    // task2();
+    task2();
     // task3();
-    // task4();
+    task4();
     return 0;
 }
