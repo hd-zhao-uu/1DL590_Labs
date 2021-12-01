@@ -2,14 +2,15 @@
 #include <limits>
 
 class FineList {
-    Node<int>* head = new Node<int>(std::numeric_limits<int>::min());
-    Node<int>* tail = new Node<int>(std::numeric_limits<int>::max());
+   private:
+    Node* head = new Node(std::numeric_limits<int>::min());
+    Node* tail = new Node(std::numeric_limits<int>::max());
 
    public:
     FineList() { head->next = tail; }
 
     bool add(int value) {
-        Node<int>*pre, *cur;
+        Node *pre, *cur;
 
         head->lock.lock();
         pre = head;
@@ -27,7 +28,7 @@ class FineList {
             return false;
 
         else {
-            Node<int>* node = new Node<int>(value);
+            Node* node = new Node(value);
             node->next = cur;
             pre->next = node;
             return true;
@@ -38,7 +39,7 @@ class FineList {
     }
 
     bool rmv(int value) {
-        Node<int>*pre, *cur;
+        Node *pre, *cur;
 
         head->lock.lock();
         pre = head;
@@ -63,7 +64,7 @@ class FineList {
     }
 
     bool ctn(int value) {
-        Node<int>*pre, *cur;
+        Node *pre, *cur;
 
         head->lock.lock();
         pre = head;
