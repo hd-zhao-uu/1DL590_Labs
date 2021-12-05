@@ -1,5 +1,5 @@
-#include <Node.h>
 #include <limits>
+#include "Node.h"
 
 class FineList {
    private:
@@ -11,6 +11,7 @@ class FineList {
 
     bool add(int value) {
         Node *pre, *cur;
+        bool ret;
 
         head->lock.lock();
         pre = head;
@@ -24,22 +25,26 @@ class FineList {
             cur->lock.lock();
         }
 
-        if (cur->value == value)
-            return false;
-
+        if (cur->value == value){
+            ret = false;
+        }
+            
         else {
             Node* node = new Node(value);
             node->next = cur;
             pre->next = node;
-            return true;
+            ret = true;
         }
 
         cur->lock.unlock();
         pre->lock.unlock();
+        return ret;
+       
     }
 
     bool rmv(int value) {
         Node *pre, *cur;
+        bool ret;
 
         head->lock.lock();
         pre = head;
@@ -55,16 +60,18 @@ class FineList {
 
         if (cur->value == value) {
             pre->next = cur->next;
-            return true;
+            ret = true;
         } else
-            return false;
+            ret = false;
 
         cur->lock.unlock();
         pre->lock.unlock();
+        return ret;
     }
 
     bool ctn(int value) {
         Node *pre, *cur;
+        bool ret;
 
         head->lock.lock();
         pre = head;
@@ -79,11 +86,12 @@ class FineList {
         }
 
         if (cur->value == value)
-            return true;
+            ret = true;
         else
-            return false;
+            ret = false;
 
         cur->lock.unlock();
         pre->lock.unlock();
+        return ret;
     }
 };
