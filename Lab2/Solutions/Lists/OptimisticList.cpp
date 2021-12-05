@@ -1,5 +1,5 @@
-#include "Node.h"
 #include <limits>
+#include "Node.h"
 
 class OptimisticList {
    private:
@@ -23,6 +23,18 @@ class OptimisticList {
 
    public:
     OptimisticList() { head->next = tail; }
+    
+    ~OptimisticList() {
+        Node* node = NULL;
+
+        while (node != tail) {
+            node = head->next;
+            delete head;
+            head = node;
+        }
+
+        delete tail;
+    }
 
     bool add(int value) {
         Node *pre, *cur;

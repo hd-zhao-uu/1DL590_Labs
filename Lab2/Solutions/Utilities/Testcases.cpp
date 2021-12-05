@@ -8,29 +8,6 @@
 #include <vector>
 #include "../Lists/Pair.h"
 
-void loadPairsFromFile(std::string testfile, std::vector<Pair>& testPairs) {
-    std::ifstream infile(testfile);
-    if (infile.is_open()) {
-        std::string line;
-        while (std::getline(infile, line)) {
-            std::istringstream iss(line);
-            std::string methodStr;
-            int input;
-            iss >> methodStr >> input;
-
-            methodname method;
-            if (methodStr == "add")
-                method = methodname::add;
-            else if (methodStr == "rmv")
-                method = methodname::rmv;
-            else
-                method = methodname::ctn;
-            testPairs.push_back({method, input});
-        }
-        infile.close();
-    }
-    printf("[Debug] Load %ld test Pairs.\n", testPairs.size() );
-}
 
 void createTestCases(int randStart,
                      int randEnd,
@@ -97,5 +74,5 @@ void createTestCases(int randStart,
         testPairs.push_back({ctn, value});
     }
 
-    printf("[Debug] Load %ld test Pairs(ctn: %d, add: %d, rmv: %d). \n", testPairs.size(), ctnSize, addSize, rmvSize);
+    printf("[DEBUG] Load %ld test Pairs(ctn: %d, add: %d, rmv: %d). \n", testPairs.size(), ctnSize, addSize, rmvSize);
 }

@@ -1,0 +1,22 @@
+======================================================================================
+Test Value Range: [0, 7]. 
+[OUTPUT]  2 threads,  Coarse-grained List Set: 16977619.824 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set:  7207364.245 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set:  2840287.719 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set:  1666722.564 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set:   793935.484 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,    Fine-grained List Set:  5105012.749 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  1592371.748 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:   778037.558 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set:   392309.936 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set:   216491.358 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,      Optimistic List Set:  8883376.540 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  2226580.922 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:   697854.660 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set:   328127.587 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set:   152759.122 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+Test Value Range: [0, 1023]. 

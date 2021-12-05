@@ -8,6 +8,17 @@ class FineList {
 
    public:
     FineList() { head->next = tail; }
+    ~FineList() {
+        Node* node = NULL;
+
+        while (node != tail) {
+            node = head->next;
+            delete head;
+            head = node;
+        }
+
+        delete tail;
+    }
 
     bool add(int value) {
         Node *pre, *cur;
@@ -25,10 +36,10 @@ class FineList {
             cur->lock.lock();
         }
 
-        if (cur->value == value){
+        if (cur->value == value) {
             ret = false;
         }
-            
+
         else {
             Node* node = new Node(value);
             node->next = cur;
@@ -39,7 +50,6 @@ class FineList {
         cur->lock.unlock();
         pre->lock.unlock();
         return ret;
-       
     }
 
     bool rmv(int value) {
