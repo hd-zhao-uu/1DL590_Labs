@@ -1,3 +1,4 @@
+#include <iostream>
 #include <limits>
 #include "Node.h"
 
@@ -23,7 +24,7 @@ class OptimisticList {
 
    public:
     OptimisticList() { head->next = tail; }
-    
+
     ~OptimisticList() {
         Node* node = NULL;
 
@@ -137,5 +138,17 @@ class OptimisticList {
                 cur->lock.unlock();
             }
         }
+    }
+
+    void printList() {
+        Node* cur = head->next;
+        std::cout << "[";
+        while (cur != tail) {
+            if (cur != head->next)
+                std::cout << ", ";
+            std::cout << cur->value;
+            cur = cur->next;
+        }
+        std::cout << "]" << std::endl;
     }
 };

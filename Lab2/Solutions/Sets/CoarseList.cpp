@@ -101,7 +101,7 @@ class CoarseList{
             }
         }
 
-        void printCoarseList() {
+        void printList() {
             Node* cur = head->next;
             std::cout << "[";
             while (cur != tail) {

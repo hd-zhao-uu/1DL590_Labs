@@ -1,3 +1,4 @@
+#include <iostream>
 #include <limits>
 #include "Node.h"
 
@@ -103,5 +104,17 @@ class FineList {
         cur->lock.unlock();
         pre->lock.unlock();
         return ret;
+    }
+
+    void printList() {
+        Node* cur = head->next;
+        std::cout << "[";
+        while (cur != tail) {
+            if (cur != head->next)
+                std::cout << ", ";
+            std::cout << cur->value;
+            cur = cur->next;
+        }
+        std::cout << "]" << std::endl;
     }
 };
