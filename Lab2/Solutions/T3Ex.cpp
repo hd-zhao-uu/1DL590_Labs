@@ -5,10 +5,10 @@
 #include <array>
 #include <fstream>
 
-#include "Lists/Pair.h"
-#include "Lists/CoarseList.cpp"
-#include "Lists/FineList.cpp"
-#include "Lists/OptimisticList.cpp"
+#include "Sets/Pair.h"
+#include "Sets/CoarseList.cpp"
+#include "Sets/FineList.cpp"
+#include "Sets/OptimisticList.cpp"
 #include "Utilities/Timer.h"
 #include "Utilities/Testcases.cpp"
 #include "Utilities/IO.cpp"
@@ -84,15 +84,35 @@ void task3() {
     createTestCases(0, 1023, testSize, testCase);
     _task3(threadNums, testCase, outputFilePath);
 
+    int i;
     // Task 3-3
-    note = "SET i = 60\n";
+    note = "SET i = 10\n";
+    i = 10;
     std::cout << bigDivider;
     std::cout << note;
     strLine2File(outputFilePath, bigDivider);
     strLine2File(outputFilePath, note);
-    createTestCases(0, 1023, 60, testSize, testCase);
+    createTestCases(0, 1023, i, testSize, testCase);
     _task3(threadNums, testCase,  outputFilePath);
 
+
+    note = "SET i = 50\n";
+    i = 50;
+    std::cout << bigDivider;
+    std::cout << note;
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 1023, i, testSize, testCase);
+    _task3(threadNums, testCase,  outputFilePath);
+
+    note = "SET i = 90\n";
+    i = 90;
+    std::cout << bigDivider;
+    std::cout << note;
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 1023, i, testSize, testCase);
+    _task3(threadNums, testCase,  outputFilePath);
 }
 
 void _task3(std::vector<int>& threadNums, std::vector<Pair>& testCase, std::string& outputFilePath) {

@@ -6,7 +6,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
-#include "../Lists/Pair.h"
+#include "../Sets/Pair.h"
 
 
 void createTestCases(int randStart,
