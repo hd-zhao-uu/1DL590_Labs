@@ -49,7 +49,7 @@ int main() {
 }
 
 void task3() {
-    std::vector<int> threadNums({2, 4, 8, 16, 32});
+    std::vector<int> threadNums({2, 4, 8, 16, 32, 64});
     std::vector<Pair> testCase;
     int testSize = 100000;
 
