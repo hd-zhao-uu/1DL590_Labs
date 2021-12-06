@@ -61,25 +61,25 @@ void task3() {
         "================\n";
     std::string note;
 
-    // // Task 3-1
-    // // loadPairsFromFile("T3TEST_1.txt", testCase);
-    // note = "Test Value Range: [0, 7]. \n";
-    // std::cout << bigDivider;
-    // std::cout << note;
+    // Task 3-1
+    // loadPairsFromFile("T3TEST_1.txt", testCase);
+    note = "Test Value Range: [0, 7]. \n";
+    std::cout << bigDivider;
+    std::cout << note;
 
-    // strLine2File(outputFilePath, bigDivider);
-    // strLine2File(outputFilePath, note);
-    // createTestCases(0, 7, testSize, testCase);
-    // _task3(threadNums, testCase, outputFilePath);
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 7, testSize, testCase);
+    _task3(threadNums, testCase, outputFilePath);
 
-    // // Task 3-2
-    // note = "Test Value Range: [0, 1023]. \n";
-    // std::cout << bigDivider;
-    // std::cout << note;
-    // strLine2File(outputFilePath, bigDivider);
-    // strLine2File(outputFilePath, note);
-    // createTestCases(0, 1023, testSize, testCase);
-    // _task3(threadNums, testCase, outputFilePath);
+    // Task 3-2
+    note = "Test Value Range: [0, 1023]. \n";
+    std::cout << bigDivider;
+    std::cout << note;
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 1023, testSize, testCase);
+    _task3(threadNums, testCase, outputFilePath);
 
     int i;
     // Task 3-3
