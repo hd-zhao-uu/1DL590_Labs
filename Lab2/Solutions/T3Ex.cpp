@@ -61,29 +61,38 @@ void task3() {
         "================\n";
     std::string note;
 
-    // Task 3-1
-    // loadPairsFromFile("T3TEST_1.txt", testCase);
-    note = "Test Value Range: [0, 7]. \n";
-    std::cout << bigDivider;
-    std::cout << note;
+    // // Task 3-1
+    // // loadPairsFromFile("T3TEST_1.txt", testCase);
+    // note = "Test Value Range: [0, 7]. \n";
+    // std::cout << bigDivider;
+    // std::cout << note;
 
-    strLine2File(outputFilePath, bigDivider);
-    strLine2File(outputFilePath, note);
-    createTestCases(0, 7, testSize, testCase);
-    _task3(threadNums, testCase, outputFilePath);
+    // strLine2File(outputFilePath, bigDivider);
+    // strLine2File(outputFilePath, note);
+    // createTestCases(0, 7, testSize, testCase);
+    // _task3(threadNums, testCase, outputFilePath);
 
-    // Task 3-2
-    note = "Test Value Range: [0, 1023]. \n";
-    std::cout << bigDivider;
-    std::cout << note;
-    strLine2File(outputFilePath, bigDivider);
-    strLine2File(outputFilePath, note);
-    createTestCases(0, 1023, testSize, testCase);
-    _task3(threadNums, testCase, outputFilePath);
+    // // Task 3-2
+    // note = "Test Value Range: [0, 1023]. \n";
+    // std::cout << bigDivider;
+    // std::cout << note;
+    // strLine2File(outputFilePath, bigDivider);
+    // strLine2File(outputFilePath, note);
+    // createTestCases(0, 1023, testSize, testCase);
+    // _task3(threadNums, testCase, outputFilePath);
 
     int i;
     // Task 3-3
-    note = "SET i = 10\n";
+    note = "SET i = 10, values: [0...7]\n";
+    i = 10;
+    std::cout << bigDivider;
+    std::cout << note;
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 7, testSize, i, testCase);
+    _task3(threadNums, testCase, outputFilePath);
+
+    note = "SET i = 10, values: [0...1023]\n";
     i = 10;
     std::cout << bigDivider;
     std::cout << note;
@@ -92,7 +101,16 @@ void task3() {
     createTestCases(0, 1023, testSize, i, testCase);
     _task3(threadNums, testCase, outputFilePath);
 
-    note = "SET i = 50\n";
+    note = "SET i = 50, values: [0...7]\n";
+    i = 50;
+    std::cout << bigDivider;
+    std::cout << note;
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 7, testSize, i, testCase);
+    _task3(threadNums, testCase, outputFilePath);
+
+    note = "SET i = 50, values: [0...1023]\n";
     i = 50;
     std::cout << bigDivider;
     std::cout << note;
@@ -101,7 +119,16 @@ void task3() {
     createTestCases(0, 1023, testSize, i, testCase);
     _task3(threadNums, testCase, outputFilePath);
 
-    note = "SET i = 90\n";
+    note = "SET i = 90, values: [0...7]\n";
+    i = 90;
+    std::cout << bigDivider;
+    std::cout << note;
+    strLine2File(outputFilePath, bigDivider);
+    strLine2File(outputFilePath, note);
+    createTestCases(0, 7, testSize, i, testCase);
+    _task3(threadNums, testCase, outputFilePath);
+
+     note = "SET i = 90, values: [0...1023]\n";
     i = 90;
     std::cout << bigDivider;
     std::cout << note;

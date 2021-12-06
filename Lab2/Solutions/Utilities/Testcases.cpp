@@ -51,7 +51,7 @@ void createTestCases(int randStart,
     // initialize random seed: */
     std::srand(std::time(NULL));
     int addSize, rmvSize, ctnSize;
-    ctnSize = size * (i/100);
+    ctnSize = size * ((double)i/100);
     addSize = (size - ctnSize) * 0.9, rmvSize = (size-ctnSize) * 0.1;
 
     int value;
