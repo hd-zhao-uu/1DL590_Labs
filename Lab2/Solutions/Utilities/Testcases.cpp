@@ -31,7 +31,7 @@ void createTestCases(int randStart,
         testPairs.push_back({method, value});
     }
 
-    printf("[Debug] Load %ld test Pairs.\n", testPairs.size() );
+    printf("[DEBUG] Load %ld test Pairs.\n", testPairs.size() );
 }
 
 void createTestCases(int randStart,
