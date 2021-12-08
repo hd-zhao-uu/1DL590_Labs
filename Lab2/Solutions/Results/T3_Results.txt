@@ -1,184 +1,184 @@
 ======================================================================================
 Test Value Range: [0, 7]. 
-[OUTPUT]  2 threads,  Coarse-grained List Set: 10721690.806 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:  3730438.851 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:  2100045.863 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:   712776.606 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:   365145.688 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:   178928.228 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set: 21523434.674 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set: 15066355.950 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set: 12157759.702 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set: 11426000.201 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set: 11681454.520 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set: 11309622.244 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:  4100749.501 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:  1419035.417 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:   650397.669 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:   946874.570 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:   463516.830 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:   229846.010 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set:  7308015.584 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  6152538.600 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:  5140632.026 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set: 15391468.244 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set: 14620564.016 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set: 14496492.760 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  6172305.809 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:  2076381.951 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:   894501.666 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:   576024.189 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   249117.372 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   123512.233 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set: 12251007.699 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  8054754.534 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  7152864.776 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set:  9132389.778 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set:  7957974.165 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set:  7780082.524 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 Test Value Range: [0, 1023]. 
-[OUTPUT]  2 threads,  Coarse-grained List Set:  1451102.865 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:   650766.706 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:   262917.536 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:   152556.487 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:    70257.268 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:    29857.327 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set:  2893802.922 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set:  2639382.439 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set:  2137448.107 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set:  2594130.494 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set:  2199473.537 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set:  1861908.527 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:   343030.452 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:   296764.973 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:   292501.486 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:   109180.544 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:    28910.086 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:    18646.107 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set:   982582.332 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  1280215.075 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:  2115638.049 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set:  1809143.286 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set:  1008549.378 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set:  1252092.487 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  1763587.130 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:  1448074.880 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:  1578031.065 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:  1146611.263 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   491380.897 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   214631.605 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set:  3529621.553 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  6435328.220 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set: 10086034.686 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 18393130.703 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 15673390.076 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 13764012.211 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 SET i = 10, values: [0...7]
-[OUTPUT]  2 threads,  Coarse-grained List Set: 16005922.602 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:  5800728.842 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:  2241900.292 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:  1231981.013 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:   633092.934 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:   306052.445 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set: 31361158.051 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set: 21793743.456 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set: 18201669.559 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set: 18395182.689 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set: 18223721.626 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set: 19026033.731 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:  3815921.081 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:  1449332.333 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:   710259.148 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:   993955.888 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:   480380.997 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:   237699.355 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set:  7919324.659 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  7164208.881 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:  5689135.813 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set: 17202302.087 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set: 15475009.431 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set: 14408001.976 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  7701015.160 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:  2771548.816 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:  1258041.856 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:   915010.140 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   424320.181 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   212493.919 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set: 15770135.168 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set: 12107079.559 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set: 10021444.552 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 14937551.918 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 13420573.001 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 13786350.070 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 SET i = 10, values: [0...1023]
-[OUTPUT]  2 threads,  Coarse-grained List Set:   919623.013 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:   417603.136 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:   200740.244 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:    99146.281 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:    48621.006 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:    24334.616 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set:  1842328.088 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set:  1630804.021 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set:  1657283.974 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set:  1587382.398 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set:  1557120.333 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set:  1568475.103 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:   179101.314 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:   156039.959 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:   116419.002 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:    88838.848 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:    19236.562 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:    12412.404 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set:   336987.679 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  1289486.886 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:   913993.238 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set:  1391751.034 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set:   654482.227 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set:   824597.082 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:   696663.549 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:   585832.322 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:   535493.879 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:   338458.611 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   218739.700 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   113209.128 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set:  1338476.660 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  2214149.018 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  3685949.785 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set:  6352065.223 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set:  6953015.068 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set:  8305270.579 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 SET i = 50, values: [0...7]
-[OUTPUT]  2 threads,  Coarse-grained List Set: 17655989.931 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:  7209866.866 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:  2555623.121 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:  1355112.643 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:   680702.667 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:   340255.718 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set: 51409919.655 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set: 39009161.001 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set: 22195226.044 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set: 21458390.769 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set: 20856703.845 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set: 20898758.035 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:  5725011.875 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:  2232113.388 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:  1026361.182 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:  1005260.578 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:   495221.120 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:   242755.273 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set: 12869437.149 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  8415347.768 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:  7642031.223 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set: 16479643.085 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set: 15977169.236 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set: 15971148.160 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  7760417.707 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:  2599988.470 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:  1229589.026 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:  1101548.359 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   561544.739 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   282538.246 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set: 14702205.522 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  9982409.480 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  9433640.783 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 18330801.868 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 17023712.980 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 17170486.681 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 SET i = 50, values: [0...1023]
-[OUTPUT]  2 threads,  Coarse-grained List Set:  1574480.401 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:   705700.839 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:   279658.020 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:   164550.059 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:    81694.020 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:    40356.573 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set:  3143552.662 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set:  2792202.371 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set:  2534422.198 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set:  2679552.159 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set:  2646487.401 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set:  2602847.863 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:   273089.655 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:   246657.733 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:   188792.770 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:   140353.972 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:    32471.095 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:    20931.923 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set:   516598.146 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:   938753.147 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:  1378677.094 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set:  2314187.336 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set:  1091683.689 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set:  1419085.041 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  1196398.173 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:   738580.219 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:   648263.740 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:   424941.509 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   214538.827 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   108432.823 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set:  2345094.766 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  3015370.337 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  5437685.949 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set:  7199258.928 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set:  6590734.671 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set:  6351203.157 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 SET i = 90, values: [0...7]
-[OUTPUT]  2 threads,  Coarse-grained List Set: 18054149.915 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:  7039867.874 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:  3030982.577 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:  1522892.749 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:   766513.710 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:   371910.766 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set: 35605599.368 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set: 29850519.802 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set: 22840501.104 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set: 23151701.236 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set: 23153458.518 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set: 22764920.905 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set: 10857746.391 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:  4177826.652 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:  1723855.419 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:   987942.278 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:   517473.265 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:   256238.378 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set: 28544136.762 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set: 19841074.765 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set: 13525235.441 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set: 15802498.160 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set: 16320735.236 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set: 16129511.280 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  8544163.032 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:  2477118.435 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:  1185297.722 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:  1691655.427 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   773474.228 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   395777.995 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set: 15693545.309 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  8916372.549 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  8550954.280 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 24738169.086 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 24001121.573 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 24267876.911 operations per 10 seconds.
 --------------------------------------------------------------------------------------
 ======================================================================================
 SET i = 90, values: [0...1023]
-[OUTPUT]  2 threads,  Coarse-grained List Set:  1799046.412 operations per 10 seconds.
-[OUTPUT]  4 threads,  Coarse-grained List Set:   771927.861 operations per 10 seconds.
-[OUTPUT]  8 threads,  Coarse-grained List Set:   365542.778 operations per 10 seconds.
-[OUTPUT] 16 threads,  Coarse-grained List Set:   199915.197 operations per 10 seconds.
-[OUTPUT] 32 threads,  Coarse-grained List Set:    93528.790 operations per 10 seconds.
-[OUTPUT] 64 threads,  Coarse-grained List Set:    46391.167 operations per 10 seconds.
+[OUTPUT]  2 threads,  Coarse-grained List Set:  3625124.945 operations per 10 seconds.
+[OUTPUT]  4 threads,  Coarse-grained List Set:  3370683.408 operations per 10 seconds.
+[OUTPUT]  8 threads,  Coarse-grained List Set:  2945125.386 operations per 10 seconds.
+[OUTPUT] 16 threads,  Coarse-grained List Set:  3198058.125 operations per 10 seconds.
+[OUTPUT] 32 threads,  Coarse-grained List Set:  3102866.888 operations per 10 seconds.
+[OUTPUT] 64 threads,  Coarse-grained List Set:  2957510.724 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,    Fine-grained List Set:   356025.317 operations per 10 seconds.
-[OUTPUT]  4 threads,    Fine-grained List Set:   298030.886 operations per 10 seconds.
-[OUTPUT]  8 threads,    Fine-grained List Set:   260779.034 operations per 10 seconds.
-[OUTPUT] 16 threads,    Fine-grained List Set:    42761.235 operations per 10 seconds.
-[OUTPUT] 32 threads,    Fine-grained List Set:    23887.888 operations per 10 seconds.
-[OUTPUT] 64 threads,    Fine-grained List Set:    13647.536 operations per 10 seconds.
+[OUTPUT]  2 threads,    Fine-grained List Set:   697079.326 operations per 10 seconds.
+[OUTPUT]  4 threads,    Fine-grained List Set:  1434622.519 operations per 10 seconds.
+[OUTPUT]  8 threads,    Fine-grained List Set:  1912528.129 operations per 10 seconds.
+[OUTPUT] 16 threads,    Fine-grained List Set:   945728.819 operations per 10 seconds.
+[OUTPUT] 32 threads,    Fine-grained List Set:   826375.765 operations per 10 seconds.
+[OUTPUT] 64 threads,    Fine-grained List Set:   946377.943 operations per 10 seconds.
 --------------------------------------------------------------------------------------
-[OUTPUT]  2 threads,      Optimistic List Set:  1969667.256 operations per 10 seconds.
-[OUTPUT]  4 threads,      Optimistic List Set:  1631249.900 operations per 10 seconds.
-[OUTPUT]  8 threads,      Optimistic List Set:  1878968.103 operations per 10 seconds.
-[OUTPUT] 16 threads,      Optimistic List Set:   945632.763 operations per 10 seconds.
-[OUTPUT] 32 threads,      Optimistic List Set:   439911.999 operations per 10 seconds.
-[OUTPUT] 64 threads,      Optimistic List Set:   228961.585 operations per 10 seconds.
+[OUTPUT]  2 threads,      Optimistic List Set:  5328048.861 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  8573223.801 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  9069471.353 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 17577511.301 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 15351100.667 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 15542536.341 operations per 10 seconds.
 --------------------------------------------------------------------------------------
