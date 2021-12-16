@@ -1,0 +1,128 @@
+======================================================================================
+Test Value Range: [0, 7]. 
+[OUTPUT]  2 threads,      Optimistic List Set: 13240390.049 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  8070357.488 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  6993379.780 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set:  9348323.221 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set:  7893062.773 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set:  7572423.129 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set: 15843465.516 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 10290239.027 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set:  8645901.379 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 10017117.007 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set:  8976559.761 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set:  9095151.793 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+Test Value Range: [0, 1023]. 
+[OUTPUT]  2 threads,      Optimistic List Set:  4148921.027 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  6622065.954 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set: 11217378.455 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 18883713.078 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 15668279.788 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 13963335.896 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set:  6911997.891 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 11399780.120 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 19629442.732 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 38724590.849 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 30687259.930 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 28142505.138 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+SET i = 10, values: [0...7]
+[OUTPUT]  2 threads,      Optimistic List Set: 17960719.661 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set: 11057815.343 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set: 10167923.424 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 15368655.656 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 14071043.092 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 14013913.184 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set: 18413999.596 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 11888060.791 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 10479256.312 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 14568775.401 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 13294121.318 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 13498868.890 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+SET i = 10, values: [0...1023]
+[OUTPUT]  2 threads,      Optimistic List Set:  1773247.882 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  4452924.276 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  6168594.182 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 10648536.186 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 10212199.897 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set:  9975878.806 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set:  3287819.332 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set:  5875613.837 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 10224725.942 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 20420094.492 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 19273777.282 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 18262672.069 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+SET i = 50, values: [0...7]
+[OUTPUT]  2 threads,      Optimistic List Set: 17812628.468 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set: 10938433.393 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  9654187.508 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 18700480.993 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 18098677.353 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 17590197.552 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set: 31823368.070 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 21276707.777 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 18608414.218 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 23481205.970 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 22412526.380 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 22701283.299 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+SET i = 50, values: [0...1023]
+[OUTPUT]  2 threads,      Optimistic List Set:  3033465.143 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  4815895.206 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set:  7233097.213 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set:  7873867.680 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set:  6666515.076 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set:  5592459.044 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set:  5879122.289 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 11780255.459 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 20037269.774 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 35250973.213 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 34371643.605 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 30305644.211 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+SET i = 90, values: [0...7]
+[OUTPUT]  2 threads,      Optimistic List Set: 15072731.258 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set: 11054332.693 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set: 10071128.493 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 26479902.396 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 25305865.076 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 25600686.054 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set: 113494534.040 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 95444939.384 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 83348275.254 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 91333654.524 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 95364374.529 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 95049999.469 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+======================================================================================
+SET i = 90, values: [0...1023]
+[OUTPUT]  2 threads,      Optimistic List Set:  4935505.944 operations per 10 seconds.
+[OUTPUT]  4 threads,      Optimistic List Set:  8753999.958 operations per 10 seconds.
+[OUTPUT]  8 threads,      Optimistic List Set: 12863038.427 operations per 10 seconds.
+[OUTPUT] 16 threads,      Optimistic List Set: 19497004.221 operations per 10 seconds.
+[OUTPUT] 32 threads,      Optimistic List Set: 18501569.186 operations per 10 seconds.
+[OUTPUT] 64 threads,      Optimistic List Set: 17091146.173 operations per 10 seconds.
+--------------------------------------------------------------------------------------
+[OUTPUT]  2 threads,            Lazy List Set: 13506398.490 operations per 10 seconds.
+[OUTPUT]  4 threads,            Lazy List Set: 27007491.879 operations per 10 seconds.
+[OUTPUT]  8 threads,            Lazy List Set: 42995241.036 operations per 10 seconds.
+[OUTPUT] 16 threads,            Lazy List Set: 74704188.225 operations per 10 seconds.
+[OUTPUT] 32 threads,            Lazy List Set: 69389308.944 operations per 10 seconds.
+[OUTPUT] 64 threads,            Lazy List Set: 66636345.673 operations per 10 seconds.
+--------------------------------------------------------------------------------------
