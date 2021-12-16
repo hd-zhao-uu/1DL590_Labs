@@ -4,9 +4,9 @@
 #include <set>
 #include <thread>
 #include <stack>
-#include "DataStructures/TreiberStack.cpp"
-#include "DataStructures/StackOperation.h"
-#include "DataStructures/StackPair.h"
+#include "Datastructures/TreiberStack.cpp"
+#include "Datastructures/StackOperation.h"
+#include "Datastructures/StackPair.h"
 #include "Utilities/Testcases.cpp"
 
 void workerFunc(int id,
