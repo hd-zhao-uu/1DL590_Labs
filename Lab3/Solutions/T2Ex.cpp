@@ -1,4 +1,4 @@
-//  Compile: g++ T1Ex.cpp -lpthread -o t1.out
+//  Compile: g++ T2Ex.cpp -lpthread -o t2.out
 
 #include <array>
 #include <fstream>

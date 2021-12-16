@@ -1,4 +1,4 @@
-//  Compile: g++ T2Ex.cpp -lpthread -o t2.out
+//  Compile: g++ T3Ex.cpp -lpthread -o t3.out
 
 #include <cstdio>
 #include <set>
