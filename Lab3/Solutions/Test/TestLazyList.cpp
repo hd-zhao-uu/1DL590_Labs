@@ -3,16 +3,14 @@
 #include <cstdio>
 #include <set>
 #include <thread>
-#include "../Sets/LazyList.cpp"
-#include "../Sets/Operation.h"
-#include "../Sets/Pair.h"
+#include "../Datastructures/LazyList.cpp"
+#include "../Datastructures/Operation.h"
+#include "../Datastructures/Pair.h"
+#include "../Datastructures/SetLib.cpp"
 #include "../Utilities/Testcases.cpp"
-#include "../Sets/SetLib.cpp"
 
 template <class T>
-void workerFunc(int id,
-                T* set,
-                std::vector<Pair>& testCase) {
+void workerFunc(int id, T* set, std::vector<Pair>& testCase) {
     bool ret;
     for (auto it = testCase.begin(); it != testCase.end(); ++it) {
         // Do the operation from the test case
@@ -63,19 +61,19 @@ void monitorFunc(std::vector<std::pair<int, Operation>>& sharedSeq) {
                 break;
         }
         if (!ret) {
-            printf("\t[ERROR] Thread Id = %d, Opertion: (%s, %d, %s)\n", threadId,
-                   mName.c_str(), op.input, op.output ? "true" : "false");
+            printf("\t[ERROR] Thread Id = %d, Opertion: (%s, %d, %s)\n",
+                   threadId, mName.c_str(), op.input,
+                   op.output ? "true" : "false");
             errorCtn++;
         }
     }
 
-    if(errorCtn == 0) {
+    if (errorCtn == 0) {
         printf("\nNO ERROR OPERATION!\n\n");
     }
 
     printf("Monitor completed\n");
 }
-
 
 int main() {
     int nThread = 16;
@@ -90,19 +88,19 @@ int main() {
     std::thread* workers = new std::thread[nThread];
 
     for (int i = 0; i < nThread; i++) {
-        workers[i] = std::thread(workerFunc<LazyList>, i, ll, std::ref(testCase));
+        workers[i] =
+            std::thread(workerFunc<LazyList>, i, ll, std::ref(testCase));
     }
 
     for (int i = 0; i < nThread; i++) {
         workers[i].join();
     }
 
-    
     delete[] workers;
     delete ll;
 
     std::thread monitor = std::thread(monitorFunc, std::ref(sharedSeq));
     monitor.join();
-   
+
     return 0;
 }

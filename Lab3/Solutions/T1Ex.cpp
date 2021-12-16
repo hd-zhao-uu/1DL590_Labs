@@ -5,9 +5,9 @@
 #include <thread>
 #include <vector>
 
-#include "Sets/LazyList.cpp"
-#include "Sets/OptimisticList.cpp"
-#include "Sets/Pair.h"
+#include "Datastructures/LazyList.cpp"
+#include "Datastructures/OptimisticList.cpp"
+#include "Datastructures/Pair.h"
 #include "Utilities/IO.cpp"
 #include "Utilities/Testcases.cpp"
 #include "Utilities/Timer.h"
@@ -38,16 +38,12 @@ void workerFunc(int id, T* set, std::vector<Pair>& testCase) {
     // printf("Worker %d completed. \n", id);
 }
 
-void task3();
-void _task3(std::vector<int>& threadNums,
+void _task1(std::vector<int>& threadNums,
             std::vector<Pair>& testCase,
-            std::string& outpuFilePath, std::string& logPath);
+            std::string& outpuFilePath,
+            std::string& logPath);
 
 int main() {
-    task3();
-}
-
-void task3() {
     std::vector<int> threadNums({2, 4, 8, 16, 32, 64});
     std::vector<Pair> testCase;
     int testSize = 100000;
@@ -57,7 +53,6 @@ void task3() {
 
     std::string logPath = "./Results/data.txt";
     std::ofstream logFile(logPath);
-
 
     std::string bigDivider =
         "======================================================================"
@@ -75,7 +70,7 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 7, testSize, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     // Task 1-2
     note = "Test Value Range: [0, 1023]. \n";
@@ -86,7 +81,7 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 1023, testSize, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     int i;
     // Task 1-3
@@ -99,7 +94,7 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 7, testSize, i, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     note = "SET i = 10, values: [0...1023]\n";
     i = 10;
@@ -110,7 +105,7 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 1023, testSize, i, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     note = "SET i = 50, values: [0...7]\n";
     i = 50;
@@ -121,7 +116,7 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 7, testSize, i, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     note = "SET i = 50, values: [0...1023]\n";
     i = 50;
@@ -132,7 +127,7 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 1023, testSize, i, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     note = "SET i = 90, values: [0...7]\n";
     i = 90;
@@ -141,7 +136,7 @@ void task3() {
     strLine2File(outputFilePath, bigDivider);
     strLine2File(outputFilePath, note);
     createTestCases(0, 7, testSize, i, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 
     note = "SET i = 90, values: [0...1023]\n";
     i = 90;
@@ -152,12 +147,13 @@ void task3() {
     strLine2File(logPath, bigDivider);
     strLine2File(logPath, note);
     createTestCases(0, 1023, testSize, i, testCase);
-    _task3(threadNums, testCase, outputFilePath, logPath);
+    _task1(threadNums, testCase, outputFilePath, logPath);
 }
 
-void _task3(std::vector<int>& threadNums,
+void _task1(std::vector<int>& threadNums,
             std::vector<Pair>& testCase,
-            std::string& outputFilePath, std::string& logPath) {
+            std::string& outputFilePath,
+            std::string& logPath) {
     // input values: {0,1,...,7}
     std::string smallDivider =
         "----------------------------------------------------------------------"
@@ -168,7 +164,6 @@ void _task3(std::vector<int>& threadNums,
     std::vector<std::string> results;
     std::vector<std::string> logs;
 
-    
     // Optimistic List Set
     for (auto& nThread : threadNums) {
         GET_TIME(startTime);

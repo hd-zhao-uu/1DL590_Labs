@@ -6,7 +6,8 @@
 #include <sstream>
 #include <string>
 #include <vector>
-#include "../Sets/Pair.h"
+#include "../Datastructures/Pair.h"
+#include "../Datastructures/StackPair.h"
 
 
 void createTestCases(int randStart,
@@ -75,4 +76,35 @@ void createTestCases(int randStart,
     }
 
     printf("[DEBUG] Load %ld test Pairs(ctn: %d, add: %d, rmv: %d). \n", testPairs.size(), ctnSize, addSize, rmvSize);
+}
+
+
+void createTestCases(int randStart,
+                     int randEnd,
+                     int size,
+                     std::vector<StackPair::StackPair>& testPairs) {
+    /*
+        Create testcases randomly with no extra requirements.
+    */
+
+    testPairs.clear();
+    // initialize random seed: */
+    std::srand(std::time(NULL));
+    StackPair::methodname methods[3] = {StackPair::push, StackPair::pop, StackPair::size};
+    StackPair::methodname method;
+    int value;
+
+    for (int i = 0; i < size; i++) {
+        method = methods[rand() % 3];
+        if(method == StackPair::push) {
+            value = rand() % (randEnd - randStart + 1) +
+                randStart;  // [randStart, randEnd]
+                testPairs.push_back({method, std::to_string(value)});
+        }
+        else {
+            testPairs.push_back({method, ""});
+        }
+    }
+
+    printf("[DEBUG] Load %ld test Stack Pairs.\n", testPairs.size() );
 }
