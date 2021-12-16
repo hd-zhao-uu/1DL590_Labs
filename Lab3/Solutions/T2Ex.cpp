@@ -135,6 +135,8 @@ int main() {
     std::cout << note;
     strLine2File(outputFilePath, bigDivider);
     strLine2File(outputFilePath, note);
+    strLine2File(logPath, bigDivider);
+    strLine2File(logPath, note);
     createTestCases(0, 7, testSize, i, testCase);
     _task1(threadNums, testCase, outputFilePath, logPath);
 
